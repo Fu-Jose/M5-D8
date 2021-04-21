@@ -1,8 +1,8 @@
-import fs from "fs-extra";
+import fsx from "fs-extra";
 import { fileURLToPath } from "url";
 import { join, dirname } from "path";
 
-const { readJSON, writeJSON } = fs;
+const { readJSON, writeJSON } = fsx;
 
 export const dataFolder = join(
   dirname(fileURLToPath(import.meta.url)),
@@ -14,5 +14,5 @@ export const getPeople = async () => {
 };
 
 export const writePeople = async (content) => {
-  await writeJSON(join(dataFolder, "people.json"), content);
+  return await writeJSON(join(dataFolder, "people.json"), content);
 };

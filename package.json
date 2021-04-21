@@ -17,6 +17,7 @@
     "express": "^4.17.1",
     "express-list-endpoints": "^5.0.0",
     "fs-extra": "^9.1.0",
+    "pdfmake": "^0.1.71",
     "uuid": "^8.3.2"
   },
   "devDependencies": {

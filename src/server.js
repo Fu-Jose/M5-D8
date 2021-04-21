@@ -11,5 +11,5 @@ app.use("/attendees", peopleRoutes);
 console.log(listEndpoints(app));
 
 app.listen(PORT, () => {
-  console.log("Server online on port 3001");
+  console.log(`Server online on port ${PORT}`);
 });
